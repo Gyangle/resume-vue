@@ -8,10 +8,10 @@
               <ResumePane/>
             </a-tab-pane>
             <a-tab-pane key="2" tab="Tab Title 2">
-
+              <InfoPane/>
             </a-tab-pane>
             <a-tab-pane key="3" tab="Tab Title 3">
-
+              <ProjectPane/>
             </a-tab-pane>
           </a-tabs>
         </a-layout-content>
@@ -23,11 +23,14 @@
 
 <script>
 import ResumePane from './components/ResumePane.vue'
-
+import InfoPane from './components/InfoPane.vue'
+import ProjectPane from './components/ProjectPane.vue'
 export default {
   name: 'App',
   components: {
-    ResumePane
+    ResumePane,
+    InfoPane,
+    ProjectPane,
   }
 }
 </script>
@@ -58,6 +61,7 @@ export default {
   background: #dad7df;
   min-height: 120px;
   line-height: 120px;
+  margin: auto;
 }
 #components-layout-demo-basic > .ant-layout {
   margin-bottom: 48px;

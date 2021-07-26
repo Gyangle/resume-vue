@@ -1,6 +1,6 @@
 <template>
-  <a-row class="card">
-    <a-col :span="8">
+  <a-row class="card" :gutter="30">
+    <a-col :span="6">
       <div class="cardPosition">
         {{ info.position }}
       </div>
@@ -8,7 +8,7 @@
         {{ info.time }}
       </div>
     </a-col>
-    <a-col :span="16">
+    <a-col :span="18">
       <div>
         <div class="cardGroup">
           {{ info.group }}
@@ -44,7 +44,9 @@ export default {
 <style scoped>
 .card {
   color: #3b117b;
-  padding: 50px 200px;
+  padding: 25px 0;
+	margin: auto !important;
+	width: 60%;
   text-align: left;
 }
 .cardPosition {
