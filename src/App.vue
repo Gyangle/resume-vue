@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import ResumePane from './components/HelloWorld.vue'
+import ResumePane from './components/ResumePane.vue'
 
 export default {
   name: 'App',
@@ -49,12 +49,12 @@ export default {
   line-height: 1.5;
 }
 #components-layout-demo-basic .ant-layout-sider {
-  background: #535354;
+  background: #4f4f50;
   color: black;
   line-height: 120px;
 }
 #components-layout-demo-basic .ant-layout-content {
-  background: #d0c8e1;
+  background: #dad7df;
   min-height: 120px;
   line-height: 120px;
 }
