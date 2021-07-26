@@ -2,7 +2,7 @@
   <div id="components-layout-demo-basic">
       <a-layout>
         <a-layout-header>RESUME</a-layout-header>
-        <a-layout-content>    
+        <a-layout-content>
           <a-tabs type="line">
             <a-tab-pane key="1" tab="Tab Title 1">
               <ResumePane/>
@@ -33,8 +33,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Open+Sans&display=swap');
 #app {
-  font-family: Hack, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
