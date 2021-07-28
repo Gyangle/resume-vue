@@ -1,16 +1,16 @@
 <template>
   <div id="components-layout-demo-basic">
       <a-layout>
-        <a-layout-header>RESUME</a-layout-header>
+        <a-layout-header>My SIte</a-layout-header>
         <a-layout-content>
-          <a-tabs type="line">
-            <a-tab-pane key="1" tab="Tab Title 1">
+          <a-tabs type="line" defaultActiveKey="2">
+            <a-tab-pane key="1" tab="RESUME">
               <ResumePane/>
             </a-tab-pane>
-            <a-tab-pane key="2" tab="Tab Title 2">
+            <a-tab-pane key="2" tab="ABOUT">
               <InfoPane/>
             </a-tab-pane>
-            <a-tab-pane key="3" tab="Tab Title 3">
+            <a-tab-pane key="3" tab="PROJECT&WORK">
               <ProjectPane/>
             </a-tab-pane>
           </a-tabs>
@@ -42,7 +42,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #3b117b;
 }
 #components-layout-demo-basic .ant-layout-header,
 #components-layout-demo-basic .ant-layout-footer {
@@ -54,7 +54,6 @@ export default {
 }
 #components-layout-demo-basic .ant-layout-sider {
   background: #4f4f50;
-  color: black;
   line-height: 120px;
 }
 #components-layout-demo-basic .ant-layout-content {
