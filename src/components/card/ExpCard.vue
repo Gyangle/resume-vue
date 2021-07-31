@@ -1,7 +1,7 @@
 <template>
   <a-row class="card" :gutter="30">
     <a-col :span="6">
-      <div class="cardPosition">
+      <div class="cardTitle">
         {{ info.position }}
       </div>
       <div class="cardTime">
@@ -42,19 +42,7 @@ export default {
 };
 </script>
 <style scoped>
-.card {
-  color: #3b117b;
-  padding: 25px 0;
-	margin: auto !important;
-	width: 60%;
-  text-align: left;
-}
-.cardPosition {
-  font-family: "Encode Sans", sans-serif;
-  line-height: 1.41em;
-  font-size: 22px;
-  font-weight: bold;
-}
+@import url("./card.css");
 .cardTime {
   font-size: 15px;
 }
@@ -62,10 +50,6 @@ export default {
   font-family: "Encode Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
-}
-.cardContent {
-  line-height: 1.875em;
-  font-size: 15px;
 }
 .cardContent > ul {
 	padding-left: 30px;

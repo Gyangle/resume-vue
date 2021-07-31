@@ -1,0 +1,20 @@
+/* styling for the card component, which includes both Experience Card and Project Card */
+.card {
+  color: #3b117b;
+  padding: 25px 0;
+  margin: auto !important;
+  width: 60%;
+  text-align: left;
+}
+
+.cardTitle {
+  font-family: "Encode Sans", sans-serif;
+  line-height: 1.41em;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cardContent {
+  line-height: 1.875em;
+  font-size: 15px;
+}

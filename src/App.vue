@@ -3,14 +3,14 @@
       <a-layout>
         <a-layout-header>My SIte</a-layout-header>
         <a-layout-content>
-          <a-tabs type="line" defaultActiveKey="2">
+          <a-tabs type="line" defaultActiveKey="3">
             <a-tab-pane key="1" tab="RESUME">
               <ResumePane/>
             </a-tab-pane>
             <a-tab-pane key="2" tab="ABOUT">
               <InfoPane/>
             </a-tab-pane>
-            <a-tab-pane key="3" tab="PROJECT&WORK">
+            <a-tab-pane key="3" tab="PROJECTS">
               <ProjectPane/>
             </a-tab-pane>
           </a-tabs>

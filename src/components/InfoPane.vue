@@ -25,7 +25,7 @@
 
 <script>
 // const baseUrl = '../pic/personalPics/'
-import AntCarousel from "./carousel/AntCarousel.vue";
+import AntCarousel from "./carousel/AntCarousel.vue"
 export default {
   // setup() {
   //   const getImgUrl = i => {
