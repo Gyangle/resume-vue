@@ -3,7 +3,7 @@
     <div class="personalName">Le Yang</div>
     <div>gyangle@umich.edu | 702-347-4943</div>
   </div>
-  <div v-for="(card, index) in allCards" :key="index">
+  <div v-for="(card, index) in resumeCards" :key="index">
     <exp-card :info="card" />
   </div>
 </template>
@@ -16,56 +16,19 @@ export default {
   components: {
     ExpCard,
   },
-  props: {},
   data() {
-    const singleCard = {
-      position: "Front-end Intern",
-      time: "April 2020 - Now",
-      group: "UW Near Eastern Languages & Civilization Department",
-      content: [
-        "First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line ",
-        "Second line Second lineSecond Second lineSecond lineSecond line",
-        "third line third line third line third line third line third line",
-      ],
-    };
-    const allCards = [
-      {
-        position: "Front-end Intern",
-        time: "April 2020 - Now",
-        group: "UW Near Eastern Languages & Civilization Department",
-        content: [
-          "First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line ",
-          "Second line Second lineSecond Second lineSecond lineSecond line",
-          "third line third line third line third line third line third line",
-        ],
-      },
-      {
-        position: "Front-end Intern",
-        time: "April 2020 - Now",
-        group: "UW Near Eastern Languages & Civilization Department",
-        content: [
-          "First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line ",
-          "Second line Second lineSecond Second lineSecond lineSecond line",
-          "third line third line third line third line third line third line",
-        ],
-      },
-      {
-        position: "Front-end Intern",
-        time: "April 2020 - Now",
-        group: "UW Near Eastern Languages & Civilization Department",
-        content: [
-          "First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line First line ",
-          "Second line Second lineSecond Second lineSecond lineSecond line",
-          "third line third line third line third line third line third line",
-        ],
-      },
-    ];
+    const resumeCards = []
     return {
-      singleCard,
-      allCards, // all cards in an array
+      resumeCards
     };
   },
-  methods: {},
+  mounted() {
+    fetch('http://localhost:5000/resume',{
+      method:'GET',
+		})
+      .then(res => res.json())
+      .then(data => this.resumeCards = data)
+  }
 };
 </script>
 <style scoped>

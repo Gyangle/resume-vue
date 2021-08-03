@@ -5,7 +5,7 @@
         <div class="intronBox">
           <div class="introBoxGreet">Hi! from Le(Grant) Yang</div>
           <div>
-            Based at Las Vegas NV, I am a Software Engineer and Lacrosse Athlete
+            Based in Las Vegas NV, I am a Software Engineer and Lacrosse Athlete
             from the University of Michigan School of Information. I'm
             interested in front-end, data visualization and recommendation
             system.
@@ -24,19 +24,8 @@
 </template>
 
 <script>
-// const baseUrl = '../pic/personalPics/'
 import AntCarousel from "./carousel/AntCarousel.vue"
 export default {
-  // setup() {
-  //   const getImgUrl = i => {
-  //     return `${baseUrl + i}.jpg`;
-  //   };
-
-  //   return {
-  //     baseUrl,
-  //     getImgUrl,
-  //   };
-  // },
   components: {
     AntCarousel,
   },

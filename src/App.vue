@@ -1,9 +1,8 @@
 <template>
   <div id="components-layout-demo-basic">
       <a-layout>
-        <a-layout-header>My SIte</a-layout-header>
         <a-layout-content>
-          <a-tabs type="line" defaultActiveKey="3">
+          <a-tabs type="line" defaultActiveKey="1">
             <a-tab-pane key="1" tab="RESUME">
               <ResumePane/>
             </a-tab-pane>
@@ -15,7 +14,7 @@
             </a-tab-pane>
           </a-tabs>
         </a-layout-content>
-        <a-layout-footer>Footer</a-layout-footer>
+        <!-- <a-layout-footer>Footer</a-layout-footer> -->
       </a-layout>
   </div>
 
@@ -44,20 +43,8 @@ export default {
   text-align: center;
   color: #3b117b;
 }
-#components-layout-demo-basic .ant-layout-header,
-#components-layout-demo-basic .ant-layout-footer {
-  background: #443c3c60;
-  color: rgba(255, 255, 255, 0.933);
-}
-#components-layout-demo-basic .ant-layout-footer {
-  line-height: 1.5;
-}
-#components-layout-demo-basic .ant-layout-sider {
-  background: #4f4f50;
-  line-height: 120px;
-}
 #components-layout-demo-basic .ant-layout-content {
-  background: #dad7df;
+  background: #efeef0;
   min-height: 120px;
   line-height: 120px;
   margin: auto;
